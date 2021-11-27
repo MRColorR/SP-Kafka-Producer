@@ -271,8 +271,8 @@ bin/
   
 target/  
 # maven project related ignore files and directories  
-.mvn/  
-target/ 
+#.mvn/  
+#target/ 
 
 # Java related
 target/**
