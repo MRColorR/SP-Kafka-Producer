@@ -1,4 +1,4 @@
-package bigdataman.Alessandro.KafkaIoTProducer;
+package bigdataman.IoT.KafkaIoTProducer;
 
 import java.io.IOException;
 import java.net.URI;

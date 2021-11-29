@@ -1,4 +1,4 @@
-package bigdataman.Alessandro.KafkaIoTProducer;
+package bigdataman.IoT.KafkaIoTProducer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
