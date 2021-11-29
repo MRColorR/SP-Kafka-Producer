@@ -19,7 +19,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 public class KafkaIoTProducer {
 
 	private static String KafkaBrokerEndpoint = "localhost:9092";
-    private static String KafkaTopic = "test";
+    private static String KafkaTopic = "test1";
     private static String CsvFile = "fout.csv";
     
   
@@ -59,7 +59,14 @@ public class KafkaIoTProducer {
                         KafkaTopic, UUID.randomUUID().toString(), line);
               
                 csvProducer.send(csvRecord, (metadata, exception) -> {
-                    if(metadata != null){ 
+                    if(metadata != null){
+                    	try {
+                    		System.out.println("Messaggio inviato");
+							Thread.sleep(500);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
                     	//se si verifica un errore metadata = null.
                         //System.out.println("CsvData: -> "+ csvRecord.key()+" | "+ csvRecord.value());
                     }
